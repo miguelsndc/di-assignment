@@ -1,6 +1,4 @@
 :root {
-  --mobile-breakpoint: 768px;
-  --desktop-sm-breakpoint: 1366px;
   --background: #f5f6fa;
   --text: #202224;
 }
@@ -18,18 +16,6 @@ body {
 
   width: 100vw;
   height: 100vh;
-}
-
-@media (max-width: var(--desktop-sm-breakpoint)) {
-  html {
-    font-size: 93.75%;
-  }
-}
-
-@media (max-width: var(--mobile-breakpoint)) {
-  html {
-    font-size: 87.5%;
-  }
 }
 
 .container {
@@ -85,4 +71,20 @@ td {
 
 .table-body tr:nth-child(even) {
   background: #e4e4e4;
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .container h1 {
+    margin-top: 5rem;
+  }
 }
