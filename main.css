@@ -87,4 +87,8 @@ td {
   .container h1 {
     margin-top: 5rem;
   }
+
+  .container .content-table {
+    margin-bottom: 3rem;
+  }
 }
