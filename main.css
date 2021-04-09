@@ -1,0 +1,88 @@
+:root {
+  --mobile-breakpoint: 768px;
+  --desktop-sm-breakpoint: 1366px;
+  --background: #f5f6fa;
+  --text: #202224;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: var(--background);
+  color: var(--text);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: var(--desktop-sm-breakpoint)) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: var(--mobile-breakpoint)) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container h3 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.content-table {
+  width: 75%;
+  max-width: 700px;
+
+  border-radius: 12px;
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  margin-bottom: 1.5rem;
+}
+
+.content-table th,
+td {
+  padding: 15px 18px;
+}
+
+.content-table .table-header {
+  width: 100%;
+  margin-bottom: 20px 0;
+}
+
+.table-header tr {
+  color: #fff;
+  background-color: #07b49b;
+  font-weight: bold;
+}
+
+.content-table .table-body {
+  margin: 1rem 0;
+}
+
+.table-body tr {
+  text-align: center;
+}
+
+.table-body tr:nth-child(even) {
+  background: #e4e4e4;
+}
